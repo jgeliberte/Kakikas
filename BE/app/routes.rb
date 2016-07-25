@@ -25,5 +25,9 @@ module Kakikas
       erb :index
     end
 
+    post '/send_feedback' do
+
+    end
+
   end
 end
