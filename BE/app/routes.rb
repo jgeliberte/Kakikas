@@ -22,7 +22,7 @@ module Kakikas
     end
     
     get '/' do
-      "Singing"
+      erb :index
     end
 
   end
