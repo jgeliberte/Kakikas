@@ -6,8 +6,6 @@ module Kakikas
 
   class Routes < Sinatra::Base
 
-    register Sinatra::Flash
-
     before do
       @obj = Kakikas::Main
     end
