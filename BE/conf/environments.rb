@@ -10,7 +10,7 @@ module Kakikas
 	Mail.defaults do
 		delivery_method :smtp, { :address   => "smtp.gmail.com",
 			:port      => 587,
-			:domain    => "localhost",
+			:domain    => "kakikas.herokuapp.com",
 			:user_name => "jgeliberte@katanatechworks.com",
 			:password  => "decmeister11",
 			:authentication => 'plain',
