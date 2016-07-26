@@ -1,10 +1,13 @@
 require 'rubygems'
 require 'sinatra'
+require 'sinatra/flash'
 require_relative './app'
 
 module Kakikas
 
   class Routes < Sinatra::Base
+
+    register Sinatra::Flash
 
     before do
       @obj = Kakikas::Main
@@ -26,8 +29,10 @@ module Kakikas
     end
 
     post '/send_feedback' do
-
+      result = @obj.send_order_and_feedback(params[:email_or_contact],params[:message_or_order])
+      if result == true
+        redirect '/'
+      end
     end
-
   end
 end
