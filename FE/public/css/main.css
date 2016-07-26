@@ -48,9 +48,11 @@ section {
 .nav-bar-header {
 	list-style-type: none;
 	margin: 0;
-	padding: 10px 40% 10px 40%;
+	padding: 10px 0 10px 0;
 	overflow: hidden;
 	background-color: #f88181;
+	display: flex;
+	justify-content: center;
 }
 
 .nav-bar-header li {
@@ -76,9 +78,11 @@ section {
 .nav-bar-footer {
 	list-style-type: none;
 	margin: 0;
-	padding: 10px 0 10px 44%;
+	padding: 10px 0 10px 0;
 	overflow: hidden;
 	background-color: #f88181;
+	display: flex;
+	justify-content: center;
 }
 
 .product-container {
@@ -107,12 +111,12 @@ section {
 }
 
 #contacts {
-    margin-left: 34%;
-    width: 500px;
-    resize: none;
-    margin-bottom: 10px;
+	width: 500px;
+	resize: none;
+	margin: auto;
+	margin-bottom: 10px;
 }
 
 textarea {
-  min-height:110px;
+	min-height:110px;
 }
