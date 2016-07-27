@@ -25,6 +25,10 @@ section {
 	opacity: 0.2;
 }
 
+.form-horizontal .form-group {
+    margin: 0;
+}
+
 @font-face {
 	font-family: 'BannerFont';
 	src: url('../fonts/The Heart of Everything Demo.ttf')
@@ -111,7 +115,7 @@ section {
 }
 
 #contacts {
-	width: 500px;
+	max-width: 500px;
 	resize: none;
 	margin: auto;
 	margin-bottom: 10px;
@@ -120,3 +124,18 @@ section {
 textarea {
 	min-height:110px;
 }
+
+@media (max-width: 991px) { /* Tablet */
+	.intro-container span {
+		font-size: 700%;
+	}
+}
+
+
+
+@media (max-width: 768px) { /* Phone */
+	.intro-container span {
+		font-size: 500%;
+	}
+}
+
