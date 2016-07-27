@@ -12,8 +12,8 @@
 			<h4>Or you can just leave us a message</h4>
 			<form class="form-horizontal" role="form" action="/send_feedback" method="post">
 				<div class="form-group">
-					<input type="text" class="form-control" id="contacts" placeholder="Enter Email or Phone Number" name="email_or_contact">
-					<textarea class="form-control vresize" id="contacts" placeholder="Enter Quantity of order or size" name="message_or_order"></textarea>
+					<input type="text" class="form-control" id="contacts" placeholder="Enter Email or Phone Number" name="email_or_contact"  required title="Please input your Contact # or Email address">
+					<textarea class="form-control vresize" id="contacts" placeholder="Enter Quantity of order or size" name="message_or_order"  required title="Please place valid Order (ex. 3 Large size Cocojam)"></textarea>
 					<button type="submit" value="submit" class="btn btn-success">Confirm</button>
 				</div>
 			</form>
